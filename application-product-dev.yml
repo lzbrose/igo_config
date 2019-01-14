@@ -3,6 +3,14 @@ server:
 spring:
   application:
     name: igo-product-dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/igo_user
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:cn/qctj/igo/mapper/*Mapper.xml
+  type-aliases-package: cn.qctj.igo.domain,cn.qctj.igo.query
 eureka:
   client:
     service-url:
