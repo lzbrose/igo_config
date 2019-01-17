@@ -1,5 +1,8 @@
 server:
   port: 8010
+  max-http-header-size:1024000
+  tomcat:
+    max-http-post-size:1024000
 spring:
   application:
     name: igo-common
